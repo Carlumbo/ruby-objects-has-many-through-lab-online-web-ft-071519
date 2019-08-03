@@ -13,7 +13,7 @@ class Artist
   end 
   
   def new_song(name, artist)
-    
+    song = Song.new()
   
   def songs
     Song.all.select do |song| 
