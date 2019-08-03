@@ -12,15 +12,6 @@ class Artist
     @@all
   end 
   
-  def new_song(name, artist)
-    song = Song.new(name,artist)
-    song 
-  end 
-  
-  def songs
-    Song.all.select do |song| 
-      song.artist == self 
-    end 
-  end   
+
   
 end 
