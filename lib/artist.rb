@@ -8,8 +8,19 @@ class Artist
     @@all << self 
   end 
   
-  def songs 
-    @songs 
+  def self.all
+    @@all
   end 
+  
+  def new_song(name, artist)
+    song = Song.new(name,artist)
+    song 
+  end 
+  
+  def songs
+    Song.all.select do |song| 
+      song.artist == self 
+    end 
+  end   
   
 end 
