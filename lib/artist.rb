@@ -1,3 +1,4 @@
+
 class Artist
   attr_accessor :name
 
@@ -24,4 +25,3 @@ class Artist
     songs.map(&:genre)
   end
 end
-end 
